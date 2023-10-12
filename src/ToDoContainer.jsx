@@ -3,9 +3,12 @@
 import ListItem from "./ListItem"
 
 export default function ToDoContainer({items, setItems,toggleToDo,deleteToDo}) {
-  return <div className="to-do-container">
-    <h2 className="to-do-heading">To do :</h2>
-    <ul className="items-list">
+  return <div className="to-do-container bg-blue-800 app-box"
+  
+  
+  >
+    <h2 className="to-do-heading text-3xl text-center">To do :</h2>
+    <ul className="items-list text-3xl mt-20">
       {/* <li className="item">item1</li> */}
       {
       items.map(item => {

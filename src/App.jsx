@@ -43,10 +43,16 @@ export default function App() {
     console.log(JSON.parse(localStorage.getItem("Items")))
   },[items])
 
-  return (<>
-    <ToDoContainer items={items} setItems={setItems} toggleToDo={toggleToDo} deleteToDo={deleteToDo}/>
+  return (<div className=
+    "bg-green-400 w-screen h-screen mx-auto my-auto flex justify-around"
+  >
+    <ToDoContainer items={items} setItems={setItems} toggleToDo={toggleToDo} deleteToDo={deleteToDo}
     
-    <NewItemForm addItem={addItem}/>
-    </>)
+    />
+    
+    <NewItemForm addItem={addItem}
+    
+    />
+    </div>)
 
 }

@@ -18,7 +18,9 @@ export default function NewItemForm({addItem}){
   }
 
   return (
-    <form className="new-item-form" onSubmit={e=>formSubmit(e)}>
+    <form onSubmit={e=>formSubmit(e)}
+    className="new-item-form bg-red-400 app-box"
+    >
       <label htmlFor="newItemInput">Add a task:</label>
       <input value={newItem} onChange={ e => setNewItem(e.target.value)} type="text" id="newItemInput"></input>
       <button type="submit">Add</button>
